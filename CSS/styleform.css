@@ -1,0 +1,79 @@
+body{
+	font-family:Arial;
+	font-size:14px;
+	background-color:#CDCDCD;
+}
+div#caracteristicas{
+	width:800px;
+	background-color:#FFFFFF;
+	margin:50px 50px;
+	padding:60px;
+}
+div#div1{
+	Position:relative;
+	border:2px solid black;
+	padding:6px;
+	text-align:left;
+	widht:350px;
+	height:300px;
+	margin-bottom:20px;
+}
+div#div2{
+	position:relative;
+	border:2px solid black;
+	padding:6px;
+	text-align:left;
+	widht:350px;
+	height:475px;
+	margin-bottom:20px;
+}
+div#div3{
+	position:relative;
+	border:2px solid black;
+	padding:6px;
+	text-align:left;
+	widht:350px;
+	height:370px;
+	margin-bottom:30px;
+}
+div#col1{
+	float:left;
+	padding:7px;
+}
+div#col2{
+	float:left;
+	padding:7px;
+}
+div#col3{
+	float:left;
+	padding:7px;
+}
+#titulo{
+	size:70pt;
+	border-bottom:10px #DCDCDC solid;
+}
+div#logo{
+	position:absolute;
+	right:250px;
+	top:66px;
+	float:right;
+	color:red;
+	font-size:42pt;
+}
+div#logo2{
+	position:absolute;
+	right:130px;
+	top:62px;
+    font-size:14pt;
+	border:2px solid transparent;
+}
+div#informacoes{
+	padding:1px;
+	border:10px;
+	background-color:#DCDCDC;
+	margin:4px;
+}
+input, textarea{
+	border:none;
+	background-color:#F0F8FF;
+}

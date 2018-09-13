@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Formulário de identificação(Pessoa Física)</title>
+		<link rel="stylesheet" type="text/css" href="CSS/styleform.css"/>
+		<script type="text/javascript"></script>
+	</head>
+	<body>
+		
+		<div id="caracteristicas">
+		<div id="logo"><b>SiC</b></div> <div id="logo2"><b>Serviço de<br> Informações<br> ao Cidadão</b></div>
+	    <header id="titulo"><b>Formulário de solicitação de informação <i>(Pessoa Física)</i></b></header>
+		<br><div id="informacoes">
+		<form action=""><b>As informações abaixo são obrigatórias</b></form>
+		</div>
+			
+			<div id="div1">
+			
+			<br><b>Nome:</b><input type="text" name="nome" size="100" value="" pattern="[a-z/s]+$" required="yes"><br>
+			<br><b>CPF:</b><input type="text" name="cpf" size="40" id="txtcpf">
+			<p>(Ou, se preferir, informar outro documento de identificação(RG,CNH,Passaporte,RNE ou outro documento válido. Se a opção for o RG, indicar orgão emissor e UF)</p>
+			<b>Tipo de documento:</b><input type="documento" name="tipo_de_documento" size="50" value=""> <b>N°:</b><input type="text" name="N°" size="5" value=""><br>
+			<br><b>Endereço Eletrônico(e-mail):</b><input type="text" name="endereco_eletronico(e-mail)" size="70" value=""><br>
+			<b>ou</b>
+			<br><b>Endereço Fisico(Rua, N°, complemento, bairro):</b>
+			<input type="text" name"Endereco_Fisico" size="80" value=""><br>
+			<br><b>Cidade:</b><input type="text" name="cidade" size="40"value="">
+			UF:
+			<select name="uf">
+				<option value="">AC</option>
+				<option value="">AL</option>
+				<option value="">AP</option>
+				<option value="">AM</option>
+				<option value="">BA</option>
+				<option value="">CE</option>
+				<option value="">DF</option>
+				<option value="">ES</option>
+				<option value="">GO</option>
+				<option value="">MA</option>
+				<option value="">MT</option>
+				<option value="">MS</option>
+				<option value="">MG</option>
+				<option value="">PA</option>
+				<option value="">PB</option>
+				<option value="">PR</option>
+				<option value="">PE</option>
+				<option value="">PI</option>
+				<option value="">RJ</option>
+				<option value="">RN</option>
+				<option value="">RS</option>
+				<option value="">RO</option>
+				<option value="">RR</option>
+				<option value="">SC</option>
+				<option value="">SP</option>
+				<option value="">SE</option>
+				<option value="">TO</option>
+				</select><br>
+				
+			<br><b>CEP:</b><input type="text" name="CEP" size="30" value=""> <b>País:</b><input type="text" name="país" size="30" value="">
+		</div>
+			
+			<br><div id="informacoes"><b>Os campos a seguir são opcionais e se preenchidos contribuirão para a melhoria de nossos serviços</b></div>
+			
+			<div id="div2">
+			<br><b>Sexo:</b> Masculino<input type="radio" name="sexo" value"masculino"> Feminino<input type="radio" name="sexo" value="feminino">  <b>Data de nascimento:</b><input type="date" name="data_de_nascimento"><br>
+			
+			<br><b>Escolaridade:</b><br>
+			<div id="col1">
+			<br><input type="radio" name="escolaridade" value="sem_instrução_formal">Sem instrução formal<br>
+			<br><input type="radio" name="escolaridade" value="ensino_superior">Ensino Superior<br>
+			<br><input type="radio" name="escolaridade" value="doutorado">doutorado<br>
+			</div>
+			<div id="col2">
+			<br><input type="radio" name="escolaridade" value="ensino_fundamental">Ensino fundamental<br>
+			<br><input type="radio" name="escolaridade" value="especialização">Especialização<br>
+			<br><input type="radio" name="escolaridade" value="ensino_medio">Ensino<br>
+			</div>
+			<div id="col3">
+			<br><input type="radio" name="escolaridade" value="mestrado">Mestrado<br>
+			</div><br><br><br><br><br><br><br><br>
+			
+			<b>Ocupação principal\Profissional</b><br>
+			<div id="col1">
+			<br><input type="radio" name="operação_principal" value="empregado_-setor_privado">Empregado-setor privado<br>
+			<br><input type="radio" name="operação_pricipal" value="pesquisador">Pesquisador<br>
+			<br><input type="radio" name="operação_pricipal" value="serviço_publico_estdual">Servidor Publico Estadual<br>
+			<br><input type="radio" name="operação_pricipal" value="jornalista">Jornalista<br>
+			<br><input type="radio" name="operação_principal" value="professor">Professor<br>
+			</div>
+			<div id="col2">
+			<br><input type="radio" name="operação_principal" value="servidor_publico_municipal">Servidor Publico Municipal<br>
+			<br><input type="radio" name="operação_principal" value="membro_do_partido_politico">Membro do Partido Político<br>
+			<br><input type="radio" name="operação_principal" value="estudante">Estudante<br>
+			<br><input type="radio" name="operação_principal" value="">Membro da ONG nacional<br>
+			<br><input type="radio" name="operação_principal" value="representante_do_sindicato">Reprentante do Sindicato<br>
+			</div>
+			
+			<div id="col3">
+			<br><input type="radio" name="operação_principal" value="empresario/empreendedor">Empresário/Empreendedor<br>
+			<br><input type="radio" name="operação_principal" value="membro_da_ong_internacional">Membro da ONG internacional<br>
+			<br><input type="radio" name="operação_principal" value="profiss.liberal\autonomo">Profiss.Liberal\autonômo<br>
+			<br><input type="radio" name="operação_principal" value="servidor_publico_federal">Servidor Publico Federal<br>
+			<br><input type="radio" name="operação_principal" value="outras">Outras<br>
+			</div><br><br><br><br><br><br><br><br><br><br><br>
+			<br><br><p><b>Telefone:</b><input a href="tel:(55) 555-55555" name="tel" value=""></p>
+			</div>
+			
+			<br><div id="informacoes"><b>Especifição do pedido de acesso à informação</b></div>
+			
+			<div id="div3">
+			<br><b>Orgão/Entidade destinatário do pedido:</b><input type="text" name="destinatario_pedido" size="70" value=""><br>
+			<br><b>Forma preferencial de recebimento da resposta</b></br>
+			<br><input type="radio" name="buscar" value="Consultar_pessoalmente">Buscar/Consultar pessoalmente
+			<input type="radio" name="buscar" value="email">E-mail
+			<input type="radio" name="buscar" value="por_carta">Por carta(Com custo)<br>
+			<br><b>Especificação do pedido:</b><br><textarea name="mensagem" rows="12" cols="90"></textarea><br><br>
+			<br><input type="submit" value="Enviar"><br>
+			</div>
+		</div>
+	</body>
+</html>
