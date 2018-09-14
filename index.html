@@ -3,23 +3,23 @@
 	<head>
 		<title>Formulário de identificação(Pessoa Física)</title>
 		<link rel="stylesheet" type="text/css" href="CSS/styleform.css"/>
-		<script type="text/javascript"></script>
+		<script type="text/javascript" src="js/javascript.js"></script>
 	</head>
 	<body>
+		<form name="frmcpf" method="post" action="index.html" onsubmit="VerificaCPF();">
 		
 		<div id="caracteristicas">
 		<div id="logo"><b>SiC</b></div> <div id="logo2"><b>Serviço de<br> Informações<br> ao Cidadão</b></div>
 	    <header id="titulo"><b>Formulário de solicitação de informação <i>(Pessoa Física)</i></b></header>
 		<br><div id="informacoes">
-		<form action=""><b>As informações abaixo são obrigatórias</b></form>
+	    <b>As informações abaixo são obrigatórias</b>
 		</div>
 			
 			<div id="div1">
-			
-			<br><b>Nome:</b><input type="text" name="nome" size="100" value="" pattern="[a-z/s]+$" required="yes"><br>
-			<br><b>CPF:</b><input type="text" name="cpf" size="40" id="txtcpf">
+			<br><b>Nome:&nbsp;</b><input type="text" name="nome" size="100" value="" pattern="[a-z/s]+$" required="yes"><br>
+			<br><b>CPF:</b><input type="text" name="cpf" maxlength="14" OnKeyPress="formatar('###.###.###-##', this)"><br>
 			<p>(Ou, se preferir, informar outro documento de identificação(RG,CNH,Passaporte,RNE ou outro documento válido. Se a opção for o RG, indicar orgão emissor e UF)</p>
-			<b>Tipo de documento:</b><input type="documento" name="tipo_de_documento" size="50" value=""> <b>N°:</b><input type="text" name="N°" size="5" value=""><br>
+			<b>Tipo de documento:</b><input type="documento" name="tipo_de_documento" size="50" value=""> <b>&nbsp;&nbsp;N°:</b><input type="text" name="N°" size="5" value=""><br>
 			<br><b>Endereço Eletrônico(e-mail):</b><input type="text" name="endereco_eletronico(e-mail)" size="70" value=""><br>
 			<b>ou</b>
 			<br><b>Endereço Fisico(Rua, N°, complemento, bairro):</b>
@@ -27,6 +27,7 @@
 			<br><b>Cidade:</b><input type="text" name="cidade" size="40"value="">
 			UF:
 			<select name="uf">
+				<option value="">...</option>
 				<option value="">AC</option>
 				<option value="">AL</option>
 				<option value="">AP</option>
@@ -56,13 +57,13 @@
 				<option value="">TO</option>
 				</select><br>
 				
-			<br><b>CEP:</b><input type="text" name="CEP" size="30" value=""> <b>País:</b><input type="text" name="país" size="30" value="">
+			<br><b>CEP:</b><input type="text" name="cep" onkeypress="mascara(this, '#####-###')" maxlength="9">
 		</div>
 			
 			<br><div id="informacoes"><b>Os campos a seguir são opcionais e se preenchidos contribuirão para a melhoria de nossos serviços</b></div>
 			
 			<div id="div2">
-			<br><b>Sexo:</b> Masculino<input type="radio" name="sexo" value"masculino"> Feminino<input type="radio" name="sexo" value="feminino">  <b>Data de nascimento:</b><input type="date" name="data_de_nascimento"><br>
+			<br><b>Sexo:</b> Masculino<input type="radio" name="sexo" value"masculino"> Feminino<input type="radio" name="sexo" value="feminino">  &nbsp;&nbsp;&nbsp;<b>Data de nascimento:</b><input type="date" name="data_de_nascimento"><br>
 			
 			<br><b>Escolaridade:</b><br>
 			<div id="col1">
@@ -102,7 +103,7 @@
 			<br><input type="radio" name="operação_principal" value="servidor_publico_federal">Servidor Publico Federal<br>
 			<br><input type="radio" name="operação_principal" value="outras">Outras<br>
 			</div><br><br><br><br><br><br><br><br><br><br><br>
-			<br><br><p><b>Telefone:</b><input a href="tel:(55) 555-55555" name="tel" value=""></p>
+			<br><br><p><b>Telefone:</b><input type="text" name="telefone" onkeypress="mascara(this, '## ####-####')" maxlength="12">
 			</div>
 			
 			<br><div id="informacoes"><b>Especifição do pedido de acesso à informação</b></div>
@@ -114,8 +115,9 @@
 			<input type="radio" name="buscar" value="email">E-mail
 			<input type="radio" name="buscar" value="por_carta">Por carta(Com custo)<br>
 			<br><b>Especificação do pedido:</b><br><textarea name="mensagem" rows="12" cols="90"></textarea><br><br>
-			<br><input type="submit" value="Enviar"><br>
+			<br><input type="button" name="Submit" value="Enviar" onclick="VerificaCPF();"><br>
 			</div>
 		</div>
+		</form>
 	</body>
 </html>

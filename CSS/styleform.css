@@ -6,8 +6,8 @@ body{
 div#caracteristicas{
 	width:800px;
 	background-color:#FFFFFF;
-	margin:50px 50px;
-	padding:60px;
+	margin:0px auto 0px auto;
+	padding:25px 60px 25px 60px;
 }
 div#div1{
 	Position:relative;
@@ -49,21 +49,21 @@ div#col3{
 	padding:7px;
 }
 #titulo{
-	size:70pt;
+	font-size:15pt;
 	border-bottom:10px #DCDCDC solid;
 }
 div#logo{
-	position:absolute;
-	right:250px;
-	top:66px;
+	position:relative;
+	right:135px;
+	top:24px;
 	float:right;
 	color:red;
 	font-size:42pt;
 }
 div#logo2{
-	position:absolute;
-	right:130px;
-	top:62px;
+	position:relative;
+	right:-670px;
+	top:20px;
     font-size:14pt;
 	border:2px solid transparent;
 }
